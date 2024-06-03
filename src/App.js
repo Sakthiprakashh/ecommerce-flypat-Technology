@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     fetch('https://dummyjson.com/products')
       .then(response => response.json())
-      .then(data => setProducts(data.products)) // Assuming the API response is an object with a 'products' array
+      .then(data => setProducts(data.products))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
 
